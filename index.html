@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A-SAM</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+  <style>
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gradient-text {
+            background: linear-gradient(to right, #00f, #8a2be2, #f00); /* 渐变色定义 */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="shortcut icon" href="./static/images/aim.ico" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+ 
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-3 publication-title"><span class="gradient-text">Flaws can be Applause</span>: Unleashing Potential of Segmenting Ambiguous Objects in SAM</h1>
+          <div class="is-size-5 publication-authors">
+
+            <span class="author-block">
+              <a href="https://xggnet.github.io/">Chenxin Li</a><sup>1</sup>,</span>
+            </span>
+            
+            <span class="author-block">
+              <a href="">Yuzhi Huang</a><sup>2</sup>,</span>
+            </span>
+
+            <span class="author-block">
+              <a href="https://wymancv.github.io/wuyang.github.io/">Wuyang Li</a><sup>1</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://liuhengyu321.github.io/">Hengyu Liu</a><sup>1</sup>,</span>
+            
+            <br> 
+            <span class="author-block">
+              <a href="https://xinyuliu-jeffrey.github.io/">Xinyu Liu</a><sup>1</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=IzA-Ij8AAAAJ">Qing Xu</a><sup>4</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://franciszchen.github.io/">Zhen Chen</a><sup>4</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://huangyue05.github.io/">Yue Huang</a><sup>2</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="http://www.ee.cuhk.edu.hk/~yxyuan/people/people.htm">Yixuan Yuan</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>CUHK,</span>
+            <span class="author-block"><sup>2</sup>XMU,</span>
+            <span class="author-block"><sup>3</sup>UNNC,</span>
+            <span class="author-block"><sup>4</sup>CAIR CAS</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="color: #FFD700; opacity: 0.7;"> NeurIPS 2024 Poster</span>
+            
+          </div>
+
+          <!-- <div class="is-size-6 publication-authors">
+            † denotes equal contribution, ‡ denotes corresponding author
+          </div> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2407.01301"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/CUHK-AIM-Group/GaussianStego"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <span class="link-block">
+                <a href="#bib"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file"></i>
+                  </span>
+                  <span>BibTeX</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <hr style="margin-top:0px">
+        <div class="content has-text-justified">
+          <p>
+            As the vision foundation models like the Segment Anything Model (SAM) demonstrate potent universality, they also present challenges in giving ambiguous and uncertain predictions. 
+            Significant variations in the model output and granularity can occur with simply subtle changes in the prompt, contradicting the consensus requirement for the robustness of a model. 
+          </p>
+          <p>
+            While some established works have been dedicated to stabilizing and fortifying the prediction of SAM, 
+            this paper takes a unique path to explore how this flaw can be inverted into an advantage when modeling inherently ambiguous data distributions. 
+          </p>
+          <p>
+            We introduce an optimization framework based on a conditional variational autoencoder, which jointly models the prompt and the granularity of the object with a latent probability distribution. 
+            This approach enables the model to adaptively perceive and represent the real ambiguous label distribution, taming SAM to produce a series of diverse, convincing, and reasonable segmentation outputs controllably.
+            Extensive experiments on several practical deployment scenarios involving ambiguity demonstrates the exceptional performance of our framework.
+          </p>
+          <img src="./static/images/intro.png" alt="" width="800" height="250" class="center">
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Framework</h2>
+        <hr style="margin-top:0px">
+        <div class="content has-text-justified">
+          <p>
+            <strong>Overview of <span class="gradient-text">&#x1D49C-SAM</span>:</strong>
+            We probabilistically model the prompt and object-level ambiguity by jointly probabilities the SAM embeddings with PGN and IGN, respectively.
+          </p>
+        </div>
+        <img src="./static/images/method.jpg" alt="" width="900" height="300" class="center">
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Experiments</h2>
+          <hr style="margin-top:0px">
+          <h2 class="title is-4">Comparison to Prompted Segmentation Models</h2>
+          <img src="./static/images/exp1.jpg" alt="" width="900" height="300" class="center">
+          <hr style="margin-top:0px">
+
+          <h2 class="title is-4">Comparison to Conventional Ambiguous Segmentation Models</h2>
+          <img src="./static/images/exp2.jpg" alt="" width="900" height="300" class="center"> 
+
+          <!-- <hr style="margin-top:0px">
+          <h2 class="title is-4">Results of embedding multimodal information</h2>
+          <img src="./static/images/pic_modal.jpg" alt="" width="800" height="250" text-align="center" class="center"> -->
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title" id="bib">BibTeX</h2>
+    <hr style="margin-top:0px">
+    <pre><code>@article{li2024flaws,
+  author    = {Chenxin Li and Yuzhi Huang and Wuyang Li and Hengyu Liu and Xinyu Liu and Qing Xu and Zhen Chen and Yue Huang and Yixuan Yuan},
+  title     = {Flaws can be Applause: Unleashing Potential of Segmenting Ambiguous Objects in SAM},
+  journal   = {arXiv preprint},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Work</h2>
+        <hr style="margin-top:0px">
+        
+
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <h2>
+                <strong>StegaNerf</strong>
+              </h2>
+              StegaNerf is the first NeRF method with multi-modal IP information instillation. <br>
+              [<a href="https://xggnet.github.io/StegaNeRF/">Project</a>]|
+              [<a href="https://arxiv.org/abs/2212.01602">Paper</a>]|
+              [<a href="https://github.com/XGGNet/StegaNeRF">Code</a>]
+            </li>
+          </ul>
+        </div>
+
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
